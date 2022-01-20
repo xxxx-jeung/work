@@ -12,8 +12,7 @@ public class App {
         int T = Integer.parseInt(br.readLine());
 
         for (int i = 0; i < T; i++) {
-            String s = br.readLine();
-            StringTokenizer stk = new StringTokenizer(s);
+            StringTokenizer stk = new StringTokenizer(br.readLine());
             int A = Integer.parseInt(stk.nextToken());
             int B = Integer.parseInt(stk.nextToken());
 
