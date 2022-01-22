@@ -9,7 +9,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        String[] strs = bf.readLine().split(" ");
+        String[] strs = bf.readLine().split(" ");   //입력한 문자열 사이 공백
         int N = Integer.parseInt(strs[0]);
         int X = Integer.parseInt(strs[1]);
 
@@ -22,7 +22,7 @@ public class App {
             else
                 break;
         }
-        List<String> result_list = list.stream().filter(val -> X > Integer.parseInt(val)).collect(Collectors.toList());
+        List<String> result_list = list.stream().filter(val -> X > Integer.parseInt(val)).collect(Collectors.toList()); // X 보다 큰 값 반환.
         System.out.println(String.join(" ", result_list));
     }
 
